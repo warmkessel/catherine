@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gKJ-ls-3su">
-    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController title="SlideShow" id="Ifx-IS-EIY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oSQ-Yj-lFz">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" id="qLJ-eu-nzs">
-                                <rect key="frame" x="59" y="62" width="811" height="304"/>
+                                <rect key="frame" x="26" y="130" width="363" height="636"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="hct-bd-sBa" kind="embed" id="3T5-HQ-x3Q"/>
@@ -38,11 +38,11 @@
             <objects>
                 <viewController title="Behavior" id="5zA-W1-XRx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q6h-Hr-7C3">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" id="HTW-EY-h6g">
-                                <rect key="frame" x="59" y="56" width="808" height="317"/>
+                                <rect key="frame" x="26" y="117" width="362" height="664"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="bJo-oO-K66" kind="embed" id="fSD-n8-SwC"/>
@@ -83,11 +83,11 @@
             <objects>
                 <viewController title="Record" id="bJo-oO-K66" customClass="RecordViewController" customModule="Catherine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NiB-fM-RI8">
-                        <rect key="frame" x="0.0" y="0.0" width="808" height="317"/>
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="664"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HE-rv-0EJ">
-                                <rect key="frame" x="673" y="119" width="60" height="48"/>
+                                <rect key="frame" x="235" y="303" width="72" height="58"/>
                                 <accessibility key="accessibilityConfiguration" label="poor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="3HE-rv-0EJ" secondAttribute="height" multiplier="5:4" id="hq3-4Y-3Dx"/>
@@ -100,13 +100,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catherine's Behavior" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVu-1E-nzP">
-                                <rect key="frame" x="278" y="19.999999999999996" width="252" height="33.666666666666657"/>
+                                <rect key="frame" x="55" y="64" width="252" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-pn-CQt">
-                                <rect key="frame" x="119" y="109.33333333333333" width="72" height="57.666666666666671"/>
+                                <rect key="frame" x="55" y="303" width="72" height="58"/>
                                 <accessibility key="accessibilityConfiguration" label="good"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="D3e-pn-CQt" secondAttribute="height" multiplier="5:4" id="kNr-o0-5wn"/>
@@ -124,21 +124,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eVu-1E-nzP" firstAttribute="centerX" secondItem="NiB-fM-RI8" secondAttribute="centerX" id="3co-uc-Tsg"/>
-                            <constraint firstItem="3HE-rv-0EJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eVu-1E-nzP" secondAttribute="bottom" constant="10" id="GPx-KJ-vqm"/>
-                            <constraint firstItem="ONA-CE-Nwj" firstAttribute="bottom" secondItem="3HE-rv-0EJ" secondAttribute="bottom" constant="150" id="GwC-mQ-zoZ"/>
-                            <constraint firstItem="ONA-CE-Nwj" firstAttribute="bottom" secondItem="D3e-pn-CQt" secondAttribute="bottom" constant="150" id="MIG-lL-u7q"/>
-                            <constraint firstItem="3HE-rv-0EJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="D3e-pn-CQt" secondAttribute="trailing" constant="45" id="PWd-Hd-Wta"/>
-                            <constraint firstItem="ONA-CE-Nwj" firstAttribute="trailing" secondItem="3HE-rv-0EJ" secondAttribute="trailing" constant="75" id="d83-sv-X6s"/>
-                            <constraint firstItem="D3e-pn-CQt" firstAttribute="top" relation="greaterThanOrEqual" secondItem="eVu-1E-nzP" secondAttribute="bottom" constant="10" id="laz-eu-Eky"/>
+                            <constraint firstItem="3HE-rv-0EJ" firstAttribute="bottom" secondItem="D3e-pn-CQt" secondAttribute="bottom" id="4u9-WS-gjd"/>
+                            <constraint firstItem="D3e-pn-CQt" firstAttribute="centerX" secondItem="NiB-fM-RI8" secondAttribute="centerX" constant="-90" id="6Tn-Cv-G0i"/>
+                            <constraint firstItem="3HE-rv-0EJ" firstAttribute="centerX" secondItem="NiB-fM-RI8" secondAttribute="centerX" constant="90" id="Jkg-UN-Pku"/>
+                            <constraint firstItem="3HE-rv-0EJ" firstAttribute="centerY" secondItem="NiB-fM-RI8" secondAttribute="centerY" id="PSb-ZY-Bd7"/>
+                            <constraint firstItem="D3e-pn-CQt" firstAttribute="centerY" secondItem="NiB-fM-RI8" secondAttribute="centerY" id="f6P-Kw-72M"/>
                             <constraint firstItem="eVu-1E-nzP" firstAttribute="top" secondItem="ONA-CE-Nwj" secondAttribute="top" constant="20" id="rwx-aQ-xr2"/>
-                            <constraint firstItem="D3e-pn-CQt" firstAttribute="leading" secondItem="ONA-CE-Nwj" secondAttribute="leading" constant="75" id="uxU-AG-6Bx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EQj-ET-vYt"/>
                     <connections>
-                        <segue destination="8Vk-s2-tbg" kind="popoverPresentation" identifier="toRespond" popoverAnchorView="NiB-fM-RI8" id="9UR-Qd-ZCv">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                        </segue>
+                        <segue destination="8Vk-s2-tbg" kind="show" identifier="toRespond" id="9UR-Qd-ZCv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crE-Bx-5WE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -151,36 +147,31 @@
             <objects>
                 <viewController title="Respond" id="8Vk-s2-tbg" customClass="RespondViewController" customModule="Catherine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="so4-dk-Xrh">
-                        <rect key="frame" x="0.0" y="0.0" width="808" height="317"/>
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="610"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" text="Respond" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lb-dg-sNF">
-                                <rect key="frame" x="346.66666666666669" y="140.66666666666666" width="115" height="36"/>
+                            <label opaque="NO" contentMode="left" text="Respond" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2lb-dg-sNF">
+                                <rect key="frame" x="10" y="10" width="342" height="590"/>
                                 <accessibility key="accessibilityConfiguration" label="respond"/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="4Ga-52-0Ow" appends="YES" id="2jf-2A-EFw"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lets take a look..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDD-kL-wnA">
-                                <rect key="frame" x="312.66666666666669" y="20" width="183" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yf0-KT-lgs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jDD-kL-wnA" firstAttribute="top" secondItem="yf0-KT-lgs" secondAttribute="top" constant="20" id="1qx-rC-9NX"/>
-                            <constraint firstItem="2lb-dg-sNF" firstAttribute="centerX" secondItem="so4-dk-Xrh" secondAttribute="centerX" id="hGP-qJ-wOw"/>
-                            <constraint firstItem="2lb-dg-sNF" firstAttribute="centerY" secondItem="so4-dk-Xrh" secondAttribute="centerY" id="hyv-IZ-9bH"/>
-                            <constraint firstItem="jDD-kL-wnA" firstAttribute="centerX" secondItem="so4-dk-Xrh" secondAttribute="centerX" id="qph-sy-GgX"/>
+                            <constraint firstItem="yf0-KT-lgs" firstAttribute="trailing" secondItem="2lb-dg-sNF" secondAttribute="trailing" constant="10" id="6mc-bL-N0z"/>
+                            <constraint firstItem="2lb-dg-sNF" firstAttribute="leading" secondItem="yf0-KT-lgs" secondAttribute="leading" constant="10" id="G35-xU-5xJ"/>
+                            <constraint firstItem="yf0-KT-lgs" firstAttribute="bottom" secondItem="2lb-dg-sNF" secondAttribute="bottom" constant="10" id="YeZ-Uj-JBF"/>
+                            <constraint firstItem="2lb-dg-sNF" firstAttribute="top" secondItem="yf0-KT-lgs" secondAttribute="top" constant="10" id="cnE-WN-90Q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jJh-N5-Ool"/>
                     <connections>
                         <outlet property="respond" destination="2lb-dg-sNF" id="43b-IX-cTQ"/>
                     </connections>
@@ -199,11 +190,11 @@
             <objects>
                 <viewController id="hct-bd-sBa" customClass="SlideViewController" customModule="Catherine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fy4-HI-djB">
-                        <rect key="frame" x="0.0" y="0.0" width="811" height="304"/>
+                        <rect key="frame" x="0.0" y="0.0" width="363" height="636"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="catherine1" translatesAutoresizingMaskIntoConstraints="NO" id="o63-Ia-bWv">
-                                <rect key="frame" x="-3" y="0.0" width="811" height="304"/>
+                                <rect key="frame" x="-1" y="0.0" width="363" height="636"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Slide Show"/>
                                 <gestureRecognizers/>
@@ -212,7 +203,7 @@
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" image="speaker" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ueb-yT-cMT">
-                                <rect key="frame" x="773" y="22" width="18" height="17"/>
+                                <rect key="frame" x="325" y="21.5" width="18" height="17"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
@@ -259,11 +250,11 @@
             <objects>
                 <viewController title="Selfie" id="9Oo-Yz-czS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ySw-Y4-VDW">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XEk-Qk-Vvx">
-                                <rect key="frame" x="59" y="56" width="808" height="317"/>
+                                <rect key="frame" x="26" y="117" width="362" height="664"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="8G6-wC-7bx" kind="embed" id="j4S-TQ-ffq"/>
@@ -284,15 +275,15 @@
             <objects>
                 <viewController title="AR View Controller" id="8G6-wC-7bx" customClass="ARViewController" customModule="Catherine" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="il5-g6-7bq">
-                        <rect key="frame" x="0.0" y="0.0" width="808" height="317"/>
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="664"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o4a-El-TqM">
-                                <rect key="frame" x="0.0" y="0.0" width="808" height="317"/>
+                                <rect key="frame" x="0.0" y="0.0" width="362" height="664"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gJK-oX-FQl">
-                                <rect key="frame" x="64" y="21.666666666666657" width="50" height="47.333333333333329"/>
+                                <rect key="frame" x="20" y="21.5" width="50" height="47.5"/>
                                 <accessibility key="accessibilityConfiguration" hint="Recenter Image" label="recenter"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -304,7 +295,7 @@
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="R77-nD-S2H">
-                                <rect key="frame" x="366.66666666666669" y="222.99999999999997" width="75" height="73.6666666666667"/>
+                                <rect key="frame" x="143.5" y="569.5" width="75" height="74"/>
                                 <accessibility key="accessibilityConfiguration" label="photo"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -316,7 +307,7 @@
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.triangle.2.circlepath.camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vmz-fu-SaS">
-                                <rect key="frame" x="738" y="31" width="50" height="47.666666666666671"/>
+                                <rect key="frame" x="292" y="30.5" width="50" height="48"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qdc-e4-47H"/>
@@ -369,13 +360,13 @@
             <objects>
                 <viewController title="Welcome" id="X0R-N9-pus" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c9d-VQ-lKM">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Or-Ba-7F0">
-                                <rect key="frame" x="297" y="90" width="332.33333333333326" height="248"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="25" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Or-Ba-7F0">
+                                <rect key="frame" x="69.5" y="103" width="275" height="690"/>
                                 <accessibility key="accessibilityConfiguration" label="s"/>
-                                <string key="text">I'd heard there was a secret chord
+                                <mutableString key="text">I'd heard there was a secret chord
 That David played and it pleased the Lord
 But you don't really care for music, do you?
 Well, it goes like this
@@ -395,13 +386,13 @@ Well baby, I've been here before
 I've seen this room and I've walked this floor
 I used to live alone before I knew ya
 And I've seen your flag on the marble arch
-And love is not a victory march…</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+And love is not a victory march…</mutableString>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hallelujah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auD-uZ-9Eb">
-                                <rect key="frame" x="363" y="20" width="200" height="35"/>
+                                <rect key="frame" x="107" y="64" width="200" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="auD-uZ-9Eb" secondAttribute="height" multiplier="40:7" id="TIz-6a-wZK"/>
                                 </constraints>
