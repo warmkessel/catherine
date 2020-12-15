@@ -1,0 +1,19 @@
+/*
+  Created by James Warmkessel on 11/26/20.
+  
+*/
+"goodReponse" = 3;
+
+"goodReponse0" = "She is such a lovely daughter";
+"goodReponse1" = "She loves you so much";
+"goodReponse2" = "She is so Good";
+
+"badReponse" = 3;
+
+"badReponse0" = "She is just like you";
+"badReponse1" = "She is growing up so fast";
+"badReponse2" = "She can be a pill";
+
+"photo" = 6;
+
+
